@@ -107,21 +107,33 @@ jobs:
         run: cd openwrt/ && ./scripts/feeds clean
       
       - name: Update feeds
-        run: cd openwrt/ && ./scripts/feeds update -a -f
+        run: cd openwrt/ && ./scripts/feeds update -a 
 
       - name: Install feeds
-        run: cd openwrt/ && ./scripts/feeds install -a -f
+        run: cd openwrt/ && ./scripts/feeds install -a 
 
       - name: Update feeds-2
-        run: cd openwrt/ && ./scripts/feeds update -a -f
+        run: cd openwrt/ && ./scripts/feeds update -a 
 
       - name: Install feeds-2
-        run: cd openwrt/ && ./scripts/feeds install -a -f
+        run: cd openwrt/ && ./scripts/feeds install -a 
 
       - name: Update feeds-3
         run: cd openwrt/ && ./scripts/feeds update -a -f
 
       - name: Install feeds-3
+        run: cd openwrt/ && ./scripts/feeds install -a -f
+
+      - name: Update feeds-4
+        run: cd openwrt/ && ./scripts/feeds update -a -f
+
+      - name: Install feeds-4
+        run: cd openwrt/ && ./scripts/feeds install -a -f
+        
+      - name: Update feeds-5
+        run: cd openwrt/ && ./scripts/feeds update -a -f
+
+      - name: Install feeds-5
         run: cd openwrt/ && ./scripts/feeds install -a -f
 
       - name: Load custom configuration
