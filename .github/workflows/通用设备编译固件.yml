@@ -49,10 +49,10 @@ jobs:
           sudo rm -rf /usr/share/dotnet /etc/apt/sources.list.d /usr/local/lib/android 2>/dev/null
           sudo -E apt-get -y update
           sudo -E apt-get -y purge azure-cli ghc* zulu* llvm* firefox google* dotnet* powershell openjdk* mongodb* moby* || true
-          sudo -E apt-get -y install $(curl -fsSL https://raw.githubusercontent.com/YMG0601/openwrt/main/ImmortalWrt)
-          sudo -E apt-get -y install $(curl -fsSL https://raw.githubusercontent.com/YMG0601/openwrt/main/Lean)
-          sudo -E apt-get -y install $(curl -fsSL https://raw.githubusercontent.com/YMG0601/openwrt/main/Lienol)
-          sudo -E apt-get -y install $(curl -fsSL https://raw.githubusercontent.com/YMG0601/openwrt/main/OpenWrt)
+          sudo -E apt-get -y install $(curl -fsSL https://is.gd/ImmortalWrt)
+          sudo -E apt-get -y install $(curl -fsSL https://is.gd/Lean_depen)
+          sudo -E apt-get -y install $(curl -fsSL https://is.gd/Lienol_depen)
+          sudo -E apt-get -y install $(curl -fsSL https://is.gd/OpenWrt)
           sudo -E systemctl daemon-reload
           #sudo -E apt-get -y full-upgrade
           sudo -E apt-get -y autoremove --purge
